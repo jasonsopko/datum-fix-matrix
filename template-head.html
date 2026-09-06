@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DATUM Fix Matrix</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+.note{color:var(--muted);font-size:13px}
+:root{
+  --bg:#f5f7f6; --surface:#ffffff; --ink:#1b2320; --muted:#5c6763; --line:#d7ddda; --accent:#2b4c6f;
+  --ok-bg:#dcf1e3; --ok-ink:#1f5e3a; --ok-line:#9fd3b3;
+  --warn-bg:#fbeecb; --warn-ink:#6b4600; --warn-line:#e8c97a;
+  --bad-bg:#f9e1dc; --bad-ink:#8a2f22; --bad-line:#eeaa9e;
+  --na-bg:#eef1ef; --na-ink:#7a837f;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#161a19; --surface:#1e2422; --ink:#e6ebe8; --muted:#9aa5a0; --line:#323b38; --accent:#8fb7dc;
+    --ok-bg:#1c3a2a; --ok-ink:#a9e2bf; --ok-line:#2f6a48;
+    --warn-bg:#3d3011; --warn-ink:#f0cf7a; --warn-line:#6e5620;
+    --bad-bg:#42211c; --bad-ink:#f2a99b; --bad-line:#7a3a30;
+    --na-bg:#232a28; --na-ink:#7d8884;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#161a19; --surface:#1e2422; --ink:#e6ebe8; --muted:#9aa5a0; --line:#323b38; --accent:#8fb7dc;
+  --ok-bg:#1c3a2a; --ok-ink:#a9e2bf; --ok-line:#2f6a48;
+  --warn-bg:#3d3011; --warn-ink:#f0cf7a; --warn-line:#6e5620;
+  --bad-bg:#42211c; --bad-ink:#f2a99b; --bad-line:#7a3a30;
+  --na-bg:#232a28; --na-ink:#7d8884;
+}
+body{background:var(--bg);color:var(--ink);font:15px/1.5 "IBM Plex Sans",system-ui,-apple-system,"Segoe UI",sans-serif;margin:0;padding:32px 24px 56px}
+main{max-width:1180px;margin:0 auto;display:grid;gap:28px}
+h1{font-size:26px;font-weight:600;margin:0 0 6px;text-wrap:balance}
+h2{font-size:17px;font-weight:600;margin:0 0 10px;color:var(--accent)}
+p{margin:0;max-width:72ch}
+.lede{color:var(--muted)}
+code,.mono{font-family:"IBM Plex Mono",ui-monospace,SFMono-Regular,Menlo,monospace;font-size:13px}
+.legend{display:flex;flex-wrap:wrap;gap:10px 18px;align-items:center;font-size:13px;color:var(--muted)}
+.chip{display:inline-block;padding:2px 9px;border-radius:3px;border:1px solid;font-family:"IBM Plex Mono",monospace;font-size:12px;font-weight:500}
+.ok{background:var(--ok-bg);color:var(--ok-ink);border-color:var(--ok-line)}
+.warn{background:var(--warn-bg);color:var(--warn-ink);border-color:var(--warn-line)}
+.bad{background:var(--bad-bg);color:var(--bad-ink);border-color:var(--bad-line)}
+.na{background:var(--na-bg);color:var(--na-ink);border-color:var(--line)}
+.wrap{overflow-x:auto;border:1px solid var(--line);border-radius:4px;background:var(--surface)}
+table{border-collapse:separate;border-spacing:0;width:100%;min-width:900px;font-variant-numeric:tabular-nums}
+th,td{padding:8px 10px;border-bottom:1px solid var(--line);vertical-align:top;text-align:left}
+th{font-size:12px;letter-spacing:.04em;text-transform:uppercase;color:var(--muted);font-weight:500;background:var(--surface);position:sticky;top:0}
+td:first-child,th:first-child{position:sticky;left:0;background:var(--surface);min-width:260px;max-width:340px;box-shadow:1px 0 0 var(--line)}
+td.c{padding:6px 8px}
+td.c span{display:block;padding:4px 8px;border-radius:3px;border:1px solid;font-family:"IBM Plex Mono",monospace;font-size:12.5px;white-space:nowrap}
+tr.group td{background:var(--bg);color:var(--muted);font-size:12px;letter-spacing:.04em;text-transform:uppercase;padding:10px 10px 4px;border-bottom:1px solid var(--line)}
+tr.group td:first-child{background:var(--bg)}
+.foot{font-size:13px;color:var(--muted);max-width:80ch}
+a{color:var(--accent)}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+</style></head><body>
+<main>
+<header>
+  <h1>DATUM Fix Matrix</h1>
+  <p class="lede">Which BLAKE2b gateway build carries which fix, generated __GENERATED__ from the live repositories. Every C gateway anyone runs descends from innerhat; CONVOY is innerhat as of 8/31 plus Luke's 55 commits; OCEAN has merged nothing since 8/5. Read down a column to see what a build lacks.</p>
+</header>
+
+<section class="legend">
+  <span class="chip ok">on master</span> fix is merged where this build comes from
+  <span class="chip warn">PR / branch</span> fix exists but is not merged
+  <span class="chip bad">missing</span> no fix at all
+  <span class="chip na">n/a</span> does not apply
+</section>
+
