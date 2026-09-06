@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-06 21:25 UTC",
+ "generated": "2026-09-06 23:28 UTC",
  "columns": [
   "OCEAN",
   "innerhat",
@@ -26,15 +26,15 @@
     },
     {
      "state": "warn",
-     "text": "#10 open"
+     "text": "#10, #8 open"
     },
     {
      "state": "ok",
      "text": "on master"
     },
     {
-     "state": "bad",
-     "text": "missing"
+     "state": "ok",
+     "text": "on master"
     },
     {
      "state": "warn",
@@ -93,8 +93,38 @@
      "text": "missing"
     },
     {
+     "state": "ok",
+     "text": "on master"
+    },
+    {
+     "state": "na",
+     "text": "n/a"
+    }
+   ]
+  },
+  {
+   "title": "Block weight accounted with the 164-byte header and the coinbase's real static size",
+   "note": "",
+   "cells": [
+    {
      "state": "bad",
      "text": "missing"
+    },
+    {
+     "state": "bad",
+     "text": "missing"
+    },
+    {
+     "state": "warn",
+     "text": "#10 open"
+    },
+    {
+     "state": "bad",
+     "text": "missing"
+    },
+    {
+     "state": "ok",
+     "text": "on master"
     },
     {
      "state": "na",
@@ -208,8 +238,8 @@
      "text": "missing"
     },
     {
-     "state": "warn",
-     "text": "#5 open"
+     "state": "bad",
+     "text": "#5 closed"
     },
     {
      "state": "bad",
@@ -552,8 +582,8 @@
      "text": "missing"
     },
     {
-     "state": "bad",
-     "text": "missing"
+     "state": "ok",
+     "text": "on master"
     },
     {
      "state": "warn",
@@ -582,8 +612,8 @@
      "text": "on master"
     },
     {
-     "state": "warn",
-     "text": "branch mainnet-coinbaser-ui-addr"
+     "state": "ok",
+     "text": "on master"
     },
     {
      "state": "warn",

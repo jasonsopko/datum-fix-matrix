@@ -38,11 +38,13 @@ COLUMNS = [
 FIXES = [
     {"group": "Payouts: a wrong answer here pays miners short"},
     {"title": "Full payout coinbase on BLAKE2b jobs (class 4, not the 755-byte class 2)", "note": "Blocks 968456 and 968159 show the truncated shape.",
-     "marker": r"blake2b_coinbase_index|return COINBASE_TYPE_YUGE", "prs": {"innerhat": 17, "convoy": 10}},
+     "marker": r"blake2b_coinbase_index|return COINBASE_TYPE_YUGE|coinbase_selection = COINBASE_TYPE_YUGE", "prs": {"innerhat": 17, "convoy": [10, 8]}},
     {"title": "Never pair the pool-only class 0 with a full template when the coinbaser is late",
      "marker": r"is_active\(\) \? DATUM_COINBASE_ID_EMPTY", "prs": {"convoy": 13}},
     {"title": "Sigop budget on payout outputs (a big P2PKH split can exceed the block limit)",
      "marker": r"sigops_budget", "prs": {"convoy": 10}},
+    {"title": "Block weight accounted with the 164-byte header and the coinbase's real static size",
+     "marker": r"DATUM_BLAKE2B_BLOCK_HEADER_SIZE\+5\)<<2", "prs": {"convoy": 10}},
     {"title": "Coinbaser wait race / lost wakeup",
      "marker": None, "prs": {"ocean": 229, "innerhat": 19, "convoy": 9}},
     {"group": "Safety: malformed input from the pool or a miner"},
@@ -166,15 +168,19 @@ def check_ref(fix, repo, ref):
 
 def cell(fix, col):
     """Returns (state, label): state in ok / warn / bad / na."""
-    n = fix.get("prs", {}).get(col["key"])
-    if n:
-        st = pr_state(col["repo"], n)
-        if st == "merged":
-            return "ok", f"merged #{n}"
-        if st == "open":
-            return "warn", f"#{n} open"
-        if st == "closed":
-            return "bad", f"#{n} closed"
+    prs = fix.get("prs", {}).get(col["key"])
+    if prs:
+        # One fix can ride in more than one PR; the best state wins.
+        states = [(n, pr_state(col["repo"], n)) for n in (prs if isinstance(prs, list) else [prs])]
+        merged = [n for n, st in states if st == "merged"]
+        opened = [n for n, st in states if st == "open"]
+        closed = [n for n, st in states if st == "closed"]
+        if merged:
+            return "ok", "merged " + ", ".join(f"#{n}" for n in merged)
+        if opened:
+            return "warn", ", ".join(f"#{n}" for n in opened) + " open"
+        if closed:
+            return "bad", ", ".join(f"#{n}" for n in closed) + " closed"
     if col["main"] and check_ref(fix, col["repo"], col["main"]):
         return "ok", "on master"
     for s in col["sides"]:
