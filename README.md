@@ -1,6 +1,6 @@
 # DATUM fix matrix
 
-Generated 2026-09-08 09:46 UTC from the live repositories by `generate.py`; the page with color is at `docs/index.html` (GitHub Pages). Bold = merged where that build comes from; plain = a PR or branch exists; missing = no fix; n/a = no gateway.
+Generated 2026-09-08 14:37 UTC from the live repositories by `generate.py`; the page with color is at `docs/index.html` (GitHub Pages). Bold = merged where that build comes from; plain = a PR or branch exists; missing = no fix; n/a = no gateway.
 
 | Fix | OCEAN | innerhat | CONVOY | FlyTheElephant | MaVeTh | Lazarus |
 |---|---|---|---|---|---|---|
@@ -33,7 +33,7 @@ Generated 2026-09-08 09:46 UTC from the live repositories by `generate.py`; the 
 
 | Package or build | Built from | Payout coinbase fix |
 |---|---|---|
-| Léo Haf's StartOS package, mempool.guide registry (Retropex/datum-gateway-startos, branch pow) | `CONVOYMining/datum_gateway at b9ea7dc` | missing |
+| Léo Haf's StartOS package, mempool.guide registry (Retropex/datum-gateway-startos, branch pow) | `CONVOYMining/datum_gateway at 7491a50` | **present** |
 | paulscode's StartOS package (paulscode/datum-blake2b-startos) | `paulscode/datum_gateway at beb9461` | missing |
 | gridlabs gridpool appliance (gridlabs-science/datum-gateway-blake2b-gridpool, branch develop) | `gridlabs-science/datum-gateway-blake2b-gridpool at develop` | **present** |
 | FlyTheElephant's build (master) | `FlyTheElephant1/datum_gateway at master` | **present** |
