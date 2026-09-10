@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-09 22:36 UTC",
+ "generated": "2026-09-10 01:08 UTC",
  "columns": [
   "OCEAN",
   "innerhat",
@@ -29,8 +29,8 @@
      "text": "#10, #8 open"
     },
     {
-     "state": "ok",
-     "text": "on master"
+     "state": "bad",
+     "text": "missing"
     },
     {
      "state": "ok",
@@ -275,8 +275,8 @@
      "text": "#3 open"
     },
     {
-     "state": "ok",
-     "text": "on master"
+     "state": "bad",
+     "text": "missing"
     },
     {
      "state": "bad",
@@ -305,8 +305,8 @@
      "text": "#4 open"
     },
     {
-     "state": "ok",
-     "text": "on master"
+     "state": "bad",
+     "text": "missing"
     },
     {
      "state": "bad",
@@ -425,8 +425,8 @@
      "text": "missing"
     },
     {
-     "state": "ok",
-     "text": "on master"
+     "state": "bad",
+     "text": "missing"
     },
     {
      "state": "bad",
@@ -455,8 +455,8 @@
      "text": "missing"
     },
     {
-     "state": "ok",
-     "text": "on master"
+     "state": "bad",
+     "text": "missing"
     },
     {
      "state": "bad",
@@ -485,8 +485,8 @@
      "text": "missing"
     },
     {
-     "state": "ok",
-     "text": "on master"
+     "state": "bad",
+     "text": "missing"
     },
     {
      "state": "bad",
@@ -578,8 +578,8 @@
      "text": "on master"
     },
     {
-     "state": "bad",
-     "text": "missing"
+     "state": "ok",
+     "text": "on master"
     },
     {
      "state": "ok",
@@ -644,8 +644,8 @@
   {
    "label": "FlyTheElephant's build (master)",
    "built": "FlyTheElephant1/datum_gateway at master",
-   "state": "ok",
-   "text": "present"
+   "state": "bad",
+   "text": "missing"
   }
  ]
 }
