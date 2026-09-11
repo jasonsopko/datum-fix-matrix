@@ -1,6 +1,6 @@
 # DATUM fix matrix
 
-Generated 2026-09-11 11:28 UTC from the live repositories by `generate.py`; the page with color is at `docs/index.html` (GitHub Pages). Bold = merged where that build comes from; plain = a PR or branch exists; missing = no fix; n/a = no gateway.
+Generated 2026-09-11 16:33 UTC from the live repositories by `generate.py`; the page with color is at `docs/index.html` (GitHub Pages). Bold = merged where that build comes from; plain = a PR or branch exists; missing = no fix; n/a = no gateway.
 
 | Fix | OCEAN | innerhat | CONVOY | FlyTheElephant | MaVeTh | Lazarus |
 |---|---|---|---|---|---|---|
