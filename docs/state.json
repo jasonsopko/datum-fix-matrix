@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-16 11:43 UTC",
+ "generated": "2026-09-16 17:04 UTC",
  "columns": [
   "OCEAN",
   "innerhat",
@@ -51,8 +51,8 @@
      "text": "missing"
     },
     {
-     "state": "bad",
-     "text": "missing"
+     "state": "ok",
+     "text": "on master"
     },
     {
      "state": "warn",
@@ -81,8 +81,8 @@
      "text": "missing"
     },
     {
-     "state": "bad",
-     "text": "missing"
+     "state": "ok",
+     "text": "on master"
     },
     {
      "state": "warn",
@@ -111,8 +111,8 @@
      "text": "missing"
     },
     {
-     "state": "bad",
-     "text": "missing"
+     "state": "ok",
+     "text": "on master"
     },
     {
      "state": "warn",
@@ -297,8 +297,8 @@
      "text": "missing"
     },
     {
-     "state": "bad",
-     "text": "missing"
+     "state": "ok",
+     "text": "on master"
     },
     {
      "state": "warn",
@@ -357,8 +357,8 @@
      "text": "missing"
     },
     {
-     "state": "bad",
-     "text": "missing"
+     "state": "ok",
+     "text": "on master"
     },
     {
      "state": "warn",
