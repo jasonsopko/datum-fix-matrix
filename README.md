@@ -1,14 +1,14 @@
 # DATUM fix matrix
 
-Generated 2026-09-21 06:26 UTC from the live repositories by `generate.py`; the page with color is at `docs/index.html` (GitHub Pages). Bold = merged where that build comes from; plain = a PR or branch exists; missing = no fix; n/a = no gateway.
+Generated 2026-09-21 14:15 UTC from the live repositories by `generate.py`; the page with color is at `docs/index.html` (GitHub Pages). Bold = merged where that build comes from; plain = a PR or branch exists; missing = no fix; n/a = no gateway.
 
 | Fix | OCEAN | innerhat | CONVOY | FlyTheElephant | MaVeTh | Lazarus |
 |---|---|---|---|---|---|---|
 | **Payouts: a wrong answer here pays miners short** | | | | | | |
-| Full payout coinbase on BLAKE2b jobs (class 4, not the 755-byte class 2) | missing | **merged #17** | #10, #8 open | missing | **on master** | branch blake2b-unsplit-coinbase |
+| Full payout coinbase on BLAKE2b jobs (class 4, not the 755-byte class 2) | missing | **merged #17** | #10, #8 open | **on master** | **on master** | branch blake2b-unsplit-coinbase |
 | Never pair the pool-only class 0 with a full template when the coinbaser is late | missing | **on master** | #13 open | missing | missing | branch late-coinbaser-convoy |
-| Sigop budget on payout outputs (a big P2PKH split can exceed the block limit) | missing | **on master** | #10 open | missing | **on master** | n/a |
-| Block weight accounted with the 164-byte header and the coinbase's real static size | missing | **on master** | #10 open | missing | **on master** | n/a |
+| Sigop budget on payout outputs (a big P2PKH split can exceed the block limit) | missing | **on master** | #10 open | **on master** | **on master** | n/a |
+| Block weight accounted with the 164-byte header and the coinbase's real static size | missing | **on master** | #10 open | **on master** | **on master** | n/a |
 | Coinbaser wait race / lost wakeup | #229 open | #19 open | #9 open | missing | missing | n/a |
 | **Safety: malformed input from the pool or a miner** | | | | | | |
 | Job-validation parser bounds and clz(0) guard | #236 open | #20 open | #11 open | missing | missing | n/a |
@@ -36,6 +36,6 @@ Generated 2026-09-21 06:26 UTC from the live repositories by `generate.py`; the 
 | Léo Haf's StartOS package, mempool.guide registry (Retropex/datum-gateway-startos, branch pow) | `CONVOYMining/datum_gateway at 7491a50` | **present** |
 | paulscode's StartOS package (paulscode/datum-blake2b-startos) | `paulscode/datum_gateway at 2f9f736` | missing |
 | gridlabs gridpool appliance (gridlabs-science/datum-gateway-blake2b-gridpool, branch develop) | `gridlabs-science/datum-gateway-blake2b-gridpool at develop` | **present** |
-| FlyTheElephant's build (master) | `FlyTheElephant1/datum_gateway at master` | missing |
+| FlyTheElephant's build (master) | `FlyTheElephant1/datum_gateway at master` | **present** |
 
 To add a fix, append an entry to `FIXES` in `generate.py`: a marker regex, a file path or a commit, plus PR numbers per repository.
