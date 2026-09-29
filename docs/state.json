@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-29 02:02 UTC",
+ "generated": "2026-09-29 08:37 UTC",
  "columns": [
   "OCEAN",
   "innerhat",
@@ -625,9 +625,9 @@
  "packages": [
   {
    "label": "L\u00e9o Haf's StartOS package, mempool.guide registry (Retropex/datum-gateway-startos, branch pow)",
-   "built": "CONVOYMining/datum_gateway at 7491a50",
-   "state": "ok",
-   "text": "present"
+   "built": "?",
+   "state": "bad",
+   "text": "missing"
   },
   {
    "label": "paulscode's StartOS package (paulscode/datum-blake2b-startos)",
