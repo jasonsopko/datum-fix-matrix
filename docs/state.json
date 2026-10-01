@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-01 06:03 UTC",
+ "generated": "2026-10-01 13:26 UTC",
  "columns": [
   "OCEAN",
   "innerhat",
@@ -631,9 +631,9 @@
   },
   {
    "label": "paulscode's StartOS package (paulscode/datum-blake2b-startos)",
-   "built": "paulscode/datum_gateway at 2f9f736",
-   "state": "bad",
-   "text": "missing"
+   "built": "paulscode/datum_gateway at 79595ce",
+   "state": "ok",
+   "text": "present"
   },
   {
    "label": "gridlabs gridpool appliance (gridlabs-science/datum-gateway-blake2b-gridpool, branch develop)",
