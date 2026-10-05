@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-05 16:07 UTC",
+ "generated": "2026-10-05 22:42 UTC",
  "columns": [
   "OCEAN",
   "innerhat",
@@ -85,8 +85,8 @@
      "text": "on master"
     },
     {
-     "state": "warn",
-     "text": "#10 open"
+     "state": "bad",
+     "text": "#10 closed"
     },
     {
      "state": "ok",
@@ -115,8 +115,8 @@
      "text": "on master"
     },
     {
-     "state": "warn",
-     "text": "#10 open"
+     "state": "bad",
+     "text": "#10 closed"
     },
     {
      "state": "ok",
