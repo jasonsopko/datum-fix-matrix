@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-07 22:02 UTC",
+ "generated": "2026-10-08 02:00 UTC",
  "columns": [
   "OCEAN",
   "innerhat",
@@ -93,8 +93,8 @@
      "text": "on master"
     },
     {
-     "state": "ok",
-     "text": "on master"
+     "state": "bad",
+     "text": "missing"
     },
     {
      "state": "na",
@@ -123,8 +123,8 @@
      "text": "on master"
     },
     {
-     "state": "ok",
-     "text": "on master"
+     "state": "bad",
+     "text": "missing"
     },
     {
      "state": "na",
@@ -549,8 +549,8 @@
      "text": "missing"
     },
     {
-     "state": "warn",
-     "text": "branch mainnet-coinbaser-ui-addr"
+     "state": "bad",
+     "text": "missing"
     },
     {
      "state": "na",
