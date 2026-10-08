@@ -1,6 +1,6 @@
 # DATUM fix matrix
 
-Generated 2026-10-08 09:04 UTC from the live repositories by `generate.py`; the page with color is at `docs/index.html` (GitHub Pages). Bold = merged where that build comes from; plain = a PR or branch exists; missing = no fix; n/a = no gateway.
+Generated 2026-10-08 16:33 UTC from the live repositories by `generate.py`; the page with color is at `docs/index.html` (GitHub Pages). Bold = merged where that build comes from; plain = a PR or branch exists; missing = no fix; n/a = no gateway.
 
 | Fix | OCEAN | innerhat | CONVOY | FlyTheElephant | MaVeTh | Lazarus |
 |---|---|---|---|---|---|---|
@@ -12,7 +12,7 @@ Generated 2026-10-08 09:04 UTC from the live repositories by `generate.py`; the 
 | Coinbaser wait race / lost wakeup | #229 open | #19 open | #9 open | missing | missing | n/a |
 | **Safety: malformed input from the pool or a miner** | | | | | | |
 | Job-validation parser bounds and clz(0) guard | #236 open | #20 open | #11 open | missing | missing | n/a |
-| Bound the 0x50 0x11 transaction reply to the buffer | #235 open | #18 open | #2 open | missing | missing | n/a |
+| Bound the 0x50 0x11 transaction reply to the buffer | #235 open | #18 open | **merged #2** | missing | missing | n/a |
 | Header XOR through memcpy (undefined behavior) | missing | missing | #5 closed | missing | missing | n/a |
 | **Operations: blocks and logs** | | | | | | |
 | submitblock "duplicate" treated as the block being accepted | #233 open | #14 open | #3 open | missing | missing | branch blake2b-unsplit-coinbase |

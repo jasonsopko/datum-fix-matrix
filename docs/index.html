@@ -56,7 +56,7 @@ a{color:var(--accent)}
 <main>
 <header>
   <h1>DATUM Fix Matrix</h1>
-  <p class="lede">Which BLAKE2b gateway build carries which fix, generated 2026-10-08 09:04 UTC from the live repositories. Every C gateway anyone runs descends from innerhat; CONVOY is innerhat as of 8/31 plus Luke's 55 commits; OCEAN has merged nothing since 8/5. Read down a column to see what a build lacks.</p>
+  <p class="lede">Which BLAKE2b gateway build carries which fix, generated 2026-10-08 16:33 UTC from the live repositories. Every C gateway anyone runs descends from innerhat; CONVOY is innerhat as of 8/31 plus Luke's 55 commits; OCEAN has merged nothing since 8/5. Read down a column to see what a build lacks.</p>
 </header>
 
 <section class="legend">
@@ -76,7 +76,7 @@ a{color:var(--accent)}
 <tr><td>Coinbaser wait race / lost wakeup</td><td class="c"><span class="warn">#229 open</span></td><td class="c"><span class="warn">#19 open</span></td><td class="c"><span class="warn">#9 open</span></td><td class="c"><span class="bad">missing</span></td><td class="c"><span class="bad">missing</span></td><td class="c"><span class="na">n/a</span></td></tr>
 <tr class="group"><td colspan="7">Safety: malformed input from the pool or a miner</td></tr>
 <tr><td>Job-validation parser bounds and clz(0) guard</td><td class="c"><span class="warn">#236 open</span></td><td class="c"><span class="warn">#20 open</span></td><td class="c"><span class="warn">#11 open</span></td><td class="c"><span class="bad">missing</span></td><td class="c"><span class="bad">missing</span></td><td class="c"><span class="na">n/a</span></td></tr>
-<tr><td>Bound the 0x50 0x11 transaction reply to the buffer</td><td class="c"><span class="warn">#235 open</span></td><td class="c"><span class="warn">#18 open</span></td><td class="c"><span class="warn">#2 open</span></td><td class="c"><span class="bad">missing</span></td><td class="c"><span class="bad">missing</span></td><td class="c"><span class="na">n/a</span></td></tr>
+<tr><td>Bound the 0x50 0x11 transaction reply to the buffer</td><td class="c"><span class="warn">#235 open</span></td><td class="c"><span class="warn">#18 open</span></td><td class="c"><span class="ok">merged #2</span></td><td class="c"><span class="bad">missing</span></td><td class="c"><span class="bad">missing</span></td><td class="c"><span class="na">n/a</span></td></tr>
 <tr><td>Header XOR through memcpy (undefined behavior)</td><td class="c"><span class="bad">missing</span></td><td class="c"><span class="bad">missing</span></td><td class="c"><span class="bad">#5 closed</span></td><td class="c"><span class="bad">missing</span></td><td class="c"><span class="bad">missing</span></td><td class="c"><span class="na">n/a</span></td></tr>
 <tr class="group"><td colspan="7">Operations: blocks and logs</td></tr>
 <tr><td>submitblock &quot;duplicate&quot; treated as the block being accepted</td><td class="c"><span class="warn">#233 open</span></td><td class="c"><span class="warn">#14 open</span></td><td class="c"><span class="warn">#3 open</span></td><td class="c"><span class="bad">missing</span></td><td class="c"><span class="bad">missing</span></td><td class="c"><span class="warn">branch blake2b-unsplit-coinbase</span></td></tr>
