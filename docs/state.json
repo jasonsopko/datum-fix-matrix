@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-08 22:08 UTC",
+ "generated": "2026-10-09 02:14 UTC",
  "columns": [
   "OCEAN",
   "innerhat",
@@ -178,8 +178,8 @@
      "text": "#20 open"
     },
     {
-     "state": "warn",
-     "text": "#11 open"
+     "state": "bad",
+     "text": "#11 closed"
     },
     {
      "state": "bad",
@@ -271,8 +271,8 @@
      "text": "#14 open"
     },
     {
-     "state": "warn",
-     "text": "#3 open"
+     "state": "ok",
+     "text": "merged #3"
     },
     {
      "state": "bad",
@@ -331,8 +331,8 @@
      "text": "missing"
     },
     {
-     "state": "warn",
-     "text": "#6 open"
+     "state": "bad",
+     "text": "#6 closed"
     },
     {
      "state": "bad",
