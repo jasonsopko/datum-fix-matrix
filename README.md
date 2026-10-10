@@ -1,6 +1,6 @@
 # DATUM fix matrix
 
-Generated 2026-10-10 15:25 UTC from the live repositories by `generate.py`; the page with color is at `docs/index.html` (GitHub Pages). Bold = merged where that build comes from; plain = a PR or branch exists; missing = no fix; n/a = no gateway.
+Generated 2026-10-10 20:07 UTC from the live repositories by `generate.py`; the page with color is at `docs/index.html` (GitHub Pages). Bold = merged where that build comes from; plain = a PR or branch exists; missing = no fix; n/a = no gateway.
 
 | Fix | OCEAN | innerhat | CONVOY | FlyTheElephant | MaVeTh | Lazarus |
 |---|---|---|---|---|---|---|
@@ -9,7 +9,7 @@ Generated 2026-10-10 15:25 UTC from the live repositories by `generate.py`; the 
 | Never pair the pool-only class 0 with a full template when the coinbaser is late | missing | **on master** | #13 open | missing | missing | branch late-coinbaser-convoy |
 | Sigop budget on payout outputs (a big P2PKH split can exceed the block limit) | missing | **on master** | #10 closed | **on master** | missing | n/a |
 | Block weight accounted with the 164-byte header and the coinbase's real static size | missing | **on master** | #10 closed | **on master** | missing | n/a |
-| Coinbaser wait race / lost wakeup | #229 open | #19 open | #9 open | missing | missing | n/a |
+| Coinbaser wait race / lost wakeup | #229 open | #19 open | **merged #9** | missing | missing | n/a |
 | **Safety: malformed input from the pool or a miner** | | | | | | |
 | Job-validation parser bounds and clz(0) guard | #236 open | #20 open | #11 closed | missing | missing | n/a |
 | Bound the 0x50 0x11 transaction reply to the buffer | #235 open | #18 open | **merged #2** | missing | missing | n/a |
