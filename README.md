@@ -1,6 +1,6 @@
 # DATUM fix matrix
 
-Generated 2026-10-14 13:47 UTC from the live repositories by `generate.py`; the page with color is at `docs/index.html` (GitHub Pages). Bold = merged where that build comes from; plain = a PR or branch exists; missing = no fix; n/a = no gateway.
+Generated 2026-10-14 18:40 UTC from the live repositories by `generate.py`; the page with color is at `docs/index.html` (GitHub Pages). Bold = merged where that build comes from; plain = a PR or branch exists; missing = no fix; n/a = no gateway.
 
 | Fix | OCEAN | innerhat | CONVOY | FlyTheElephant | MaVeTh | Lazarus |
 |---|---|---|---|---|---|---|
@@ -17,7 +17,7 @@ Generated 2026-10-14 13:47 UTC from the live repositories by `generate.py`; the 
 | **Operations: blocks and logs** | | | | | | |
 | submitblock "duplicate" treated as the block being accepted | #233 open | #14 open | **merged #3** | missing | missing | branch blake2b-unsplit-coinbase |
 | Log the node's JSON-RPC error instead of dropping it | missing | **on master** | #4 open | missing | missing | branch blake2b-unsplit-coinbase |
-| Logger waits for its writer thread at init | #231 open | missing | #6 closed | missing | missing | n/a |
+| Logger waits for its writer thread at init | **merged #231** | missing | #6 closed | missing | missing | n/a |
 | Name the client that found a block | missing | **on master** | #7 open | missing | missing | n/a |
 | Warn about BLAKE2b misconfiguration before it costs a block | missing | #12 open | missing | missing | missing | n/a |
 | Template PoW on the status page | missing | #11 open | missing | missing | missing | branch blake2b-unsplit-coinbase |
