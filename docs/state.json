@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-15 13:29 UTC",
+ "generated": "2026-10-15 18:21 UTC",
  "columns": [
   "OCEAN",
   "innerhat",
@@ -170,8 +170,8 @@
    "note": "",
    "cells": [
     {
-     "state": "warn",
-     "text": "#236 open"
+     "state": "ok",
+     "text": "merged #236"
     },
     {
      "state": "warn",
