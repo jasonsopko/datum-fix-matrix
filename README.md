@@ -1,32 +1,32 @@
 # DATUM fix matrix
 
-Generated 2026-10-15 22:24 UTC from the live repositories by `generate.py`; the page with color is at `docs/index.html` (GitHub Pages). Bold = merged where that build comes from; plain = a PR or branch exists; missing = no fix; n/a = no gateway.
+Generated 2026-10-16 01:25 UTC from the live repositories by `generate.py`; the page with color is at `docs/index.html` (GitHub Pages). Bold = merged where that build comes from; plain = a PR or branch exists; missing = no fix; n/a = no gateway.
 
 | Fix | OCEAN | innerhat | CONVOY | FlyTheElephant | MaVeTh | Lazarus |
 |---|---|---|---|---|---|---|
 | **Payouts: a wrong answer here pays miners short** | | | | | | |
-| Full payout coinbase on BLAKE2b jobs (class 4, not the 755-byte class 2) | missing | **merged #17** | **merged #8** | **on master** | **on master** | branch blake2b-unsplit-coinbase |
-| Never pair the pool-only class 0 with a full template when the coinbaser is late | missing | **on master** | #13 open | missing | missing | branch late-coinbaser-convoy |
+| Full payout coinbase on BLAKE2b jobs (class 4, not the 755-byte class 2) | missing | **on master** | **merged #8** | **on master** | **on master** | branch blake2b-unsplit-coinbase |
+| Never pair the pool-only class 0 with a full template when the coinbaser is late | missing | missing | #13 open | missing | missing | branch late-coinbaser-convoy |
 | Sigop budget on payout outputs (a big P2PKH split can exceed the block limit) | missing | **on master** | #10 closed | **on master** | missing | n/a |
 | Block weight accounted with the 164-byte header and the coinbase's real static size | missing | **on master** | #10 closed | **on master** | missing | n/a |
-| Coinbaser wait race / lost wakeup | **merged #229** | #19 open | **merged #9** | missing | missing | n/a |
+| Coinbaser wait race / lost wakeup | **merged #229** | missing | **merged #9** | missing | missing | n/a |
 | **Safety: malformed input from the pool or a miner** | | | | | | |
-| Job-validation parser bounds and clz(0) guard | **merged #236** | #20 open | #11 closed | missing | missing | n/a |
-| Bound the 0x50 0x11 transaction reply to the buffer | #235 open | #18 open | **merged #2** | missing | missing | n/a |
+| Job-validation parser bounds and clz(0) guard | **merged #236** | missing | #11 closed | missing | missing | n/a |
+| Bound the 0x50 0x11 transaction reply to the buffer | #235 open | **on master** | **merged #2** | missing | missing | n/a |
 | Header XOR through memcpy (undefined behavior) | missing | missing | #5 closed | missing | missing | n/a |
 | **Operations: blocks and logs** | | | | | | |
-| submitblock "duplicate" treated as the block being accepted | #233 open | #14 open | **merged #3** | missing | missing | branch blake2b-unsplit-coinbase |
-| Log the node's JSON-RPC error instead of dropping it | missing | **on master** | #4 open | missing | missing | branch blake2b-unsplit-coinbase |
+| submitblock "duplicate" treated as the block being accepted | #233 open | **on master** | **merged #3** | missing | missing | branch blake2b-unsplit-coinbase |
+| Log the node's JSON-RPC error instead of dropping it | missing | missing | #4 open | missing | missing | branch blake2b-unsplit-coinbase |
 | Logger waits for its writer thread at init | **merged #231** | missing | #6 closed | missing | missing | n/a |
-| Name the client that found a block | missing | **on master** | #7 open | missing | missing | n/a |
-| Warn about BLAKE2b misconfiguration before it costs a block | missing | #12 open | missing | missing | missing | n/a |
-| Template PoW on the status page | missing | #11 open | missing | missing | missing | branch blake2b-unsplit-coinbase |
-| BLAKE2b setup guide | missing | #10 open | missing | missing | missing | branch blake2b-unsplit-coinbase |
-| Share prevalidation, share hash on node-check lines, log rotation | missing | #9 open | missing | missing | missing | branch blake2b-unsplit-coinbase |
-| Smart logging by state (NoFlames) | missing | #13 open | missing | missing | missing | n/a |
+| Name the client that found a block | missing | missing | #7 open | missing | missing | n/a |
+| Warn about BLAKE2b misconfiguration before it costs a block | missing | missing | missing | missing | missing | n/a |
+| Template PoW on the status page | missing | missing | missing | missing | missing | branch blake2b-unsplit-coinbase |
+| BLAKE2b setup guide | missing | missing | missing | missing | missing | branch blake2b-unsplit-coinbase |
+| Share prevalidation, share hash on node-check lines, log rotation | missing | missing | missing | missing | missing | branch blake2b-unsplit-coinbase |
+| Smart logging by state (NoFlames) | missing | missing | missing | missing | missing | n/a |
 | Drop the forced BIP9 bit 4 (high-hash), headline warning, mainnet address display | missing | missing | missing | missing | missing | n/a |
 | **Platform** | | | | | | |
-| Luke's 64-bit Prime ID, submitblock failure handling, oversized tag, jsonrpc free | missing | missing | **on master** | **on master** | **on master** | branch late-coinbaser-convoy |
+| Luke's 64-bit Prime ID, submitblock failure handling, oversized tag, jsonrpc free | missing | **on master** | **on master** | **on master** | **on master** | branch late-coinbaser-convoy |
 | Wire-time fixes and macOS build (August 26 batch) | missing | **on master** | **on master** | **on master** | **on master** | branch blake2b-unsplit-coinbase |
 
 ## What people install
