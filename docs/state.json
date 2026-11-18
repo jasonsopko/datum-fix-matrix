@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-17 22:56 UTC",
+ "generated": "2026-11-18 04:29 UTC",
  "columns": [
   "OCEAN",
   "innerhat",
@@ -631,7 +631,7 @@
   },
   {
    "label": "paulscode's StartOS package (paulscode/datum-blake2b-startos)",
-   "built": "paulscode/datum_gateway at b74a585",
+   "built": "paulscode/datum_gateway at 4e05599",
    "state": "bad",
    "text": "missing"
   },
